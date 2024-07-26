@@ -65,11 +65,11 @@ body {
 }
 
 .search-icon {
-   position: absolute;
-   top: 18px;
-   left: 25px;
-   width: 27px;
-   height: 27px;
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    width: 27px;
+    height: 27px;
 }
 
 
@@ -103,7 +103,7 @@ th {
     letter-spacing: 0px;
     color: #FFFFFF;
     height: 40px;
-    
+
 }
 
 td {
@@ -115,24 +115,25 @@ td {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
-.profile{
+.profile {
     display: flex;
     align-items: center;
 }
-.profile-icon{
+
+.profile-icon {
     margin-right: 10px;
 }
 
-.section>span{
+.section>span {
     background: #E9FEA5 0% 0% no-repeat padding-box;
     font: normal normal normal 14px/19px Roboto;
     border-radius: 13px;
 }
 
-.icons>span{
-    margin:10px;
+.icons>span {
+    margin: 10px;
 }
 
-.start-date{
+.start-date {
     margin-left: 10px;
 }

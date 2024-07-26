@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayRoll Form</title>
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/payrollform.css">
 </head>
+
 <body>
     <div class="navbar">
         <img src="../assets/logo.png" class="logo-icon">
@@ -14,5 +16,79 @@
             <span style="color: #42515F;">PAYROLL</span>
         </div>
     </div>
+    <div class="container">
+        <h3>Employee Payroll Form</h3>
+        <div class="name">
+            <span>Name</span>
+            <input class="name-input" type="text">
+        </div>
+        <div class="avatar-container">
+            <span class="profile-image-txt">Profile Image</span>
+            <div>
+                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse 1.png"></span>
+            </div>
+            <div>
+                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse -2.png"></span>
+            </div>
+            <div>
+                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse -1.png"></span>
+            </div>
+            <div>
+                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse -3.png"></span>
+            </div>
+        </div>
+        <div class="gender">
+            <span class="gender-txt">Gender</span>
+            <div>
+                <input class="gender-radio" type="radio" value="male"><span>Male</span>
+            </div>
+            <div>
+                <input class="gender-radio" type="radio" value="female"><span>Female</span>
+            </div>
+        </div>
+        <div class="department">
+            <span class="department-txt">Department</span>
+            <div>
+                <span><input type="checkbox" value="HR">HR</span>
+                <span><input type="checkbox" value="Sales">Sales</span>
+                <span><input type="checkbox" value="Finance">Finance</span>
+                <span><input type="checkbox" value="Engineer">Engineer</span>
+                <span><input type="checkbox" value="Others">Others</span>
+            </div>
+        </div>
+        <div class="salary">
+            <span class="salary-txt">Salary</span>
+            <span>
+                <select class="salary-select">
+                    <option>Select Salary</option>
+                </select>
+            </span>
+        </div>
+        <div class="start-date">
+            <span class="start-date-txt">Start Date</span>
+            <select class="day-select">
+                <option>Day</option>
+            </select>
+            <select class="month-select">
+                <option>Month</option>
+            </select>
+            <select class="year-select">
+                <option>Year</option>
+            </select>
+        </div>
+        <div class="notes">
+            <span class="notes-txt">Notes</span>
+            <textarea>
+            </textarea>
+        </div>
+        <div class="btn-grp">
+            <button class="cancel-btn">Cancel</button>
+            <div class="btn-grp1">
+                <button class="submit-btn">Submit</button>
+                <button class="reset-btn">Reset</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
