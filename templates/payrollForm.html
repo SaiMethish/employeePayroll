@@ -7,6 +7,7 @@
     <title>PayRoll Form</title>
     <link rel="stylesheet" href="../css/payrollform.css">
     <script src="../js/index.js"></script>
+    <script src="../js/jquery.js"></script>
 </head>
 
 <body>
@@ -26,16 +27,16 @@
         <div class="avatar-container">
             <span class="profile-image-txt">Profile Image</span>
             <div>
-                <input  class="profile-input" type="radio"><span><img id="profile-input1" src="../assets/Ellipse 1.png"></span>
+                <input  class="profile-input" type="radio"  value="../assets/Ellipse 1.png"><span><img  src="../assets/Ellipse 1.png"></span>
             </div>
             <div>
-                <input  class="profile-input" type="radio"><span><img id="profile-input2" src="../assets/Ellipse -2.png"></span>
+                <input  class="profile-input" type="radio" value="../assets/Ellipse -2.png"><span><img id="profile-input2" src="../assets/Ellipse -2.png"></span>
             </div>
             <div>
-                <input  class="profile-input" type="radio"><span><img id="profile-input3" src="../assets/Ellipse -1.png"></span>
+                <input  class="profile-input" type="radio" value="../assets/Ellipse -1.png"><span><img id="profile-input3" src="../assets/Ellipse -1.png"></span>
             </div>
             <div>
-                <input  class="profile-input" type="radio"><span><img id="profile-input4" src="../assets/Ellipse -3.png"></span>
+                <input  class="profile-input" type="radio" value="../assets/Ellipse -3.png"><span><img id="profile-input4" src="../assets/Ellipse -3.png"></span>
             </div>
         </div>
         <div class="gender">
@@ -70,15 +71,15 @@
         </div>
         <div class="start-date">
             <span class="start-date-txt">Start Date</span>
-            <select class="day-select">
+            <select  id="day-select">
                 <option>Day</option>
                 <option value="1">1</option>
             </select>
-            <select class="month-select">
+            <select id="month-select">
                 <option>Month</option>
                 <option value="2">2</option>
             </select>
-            <select class="year-select">
+            <select id="year-select">
                 <option>Year</option>
                 <option value="2020">2020</option>
             </select>
@@ -91,7 +92,7 @@
         <div class="btn-grp">
             <button class="cancel-btn">Cancel</button>
             <div class="btn-grp1">
-                <button class="submit-btn" onclick="submit()">Submit</button>
+                <button class="submit-btn" onclick="Submit()">Submit</button>
                 <button class="reset-btn">Reset</button>
             </div>
         </div>
