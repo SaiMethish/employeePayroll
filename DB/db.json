@@ -10,28 +10,6 @@
       "notes": "this is a description of dummy value"
     },
     {
-      "name": "name1",
-      "profileImage": "../assets/Ellipse 1.png",
-      "gender": "female",
-      "department": "['HR','Sales' ]",
-      "salary": "20000",
-      "startDate": "29",
-      "notes": "this is a description of dummy value"
-    },
-    {
-      "id": "8c1f",
-      "name": "user1",
-      "profileImage": "http://127.0.0.1:5500/assets/Ellipse+1.png",
-      "gender": "female",
-      "department": [
-        "HR",
-        "Sales"
-      ],
-      "salary": "20000",
-      "startDate": "1/2/2020",
-      "notes": "dummy value"
-    },
-    {
       "id": "b0f3",
       "name": "methish",
       "profileImage": "../assets/Ellipse -3.png",

@@ -1,3 +1,9 @@
+
+var script = document.createElement("SCRIPT");
+script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName("head")[0].appendChild(script);
+
 const redirect = () => {
     window.location.href = "../templates/payrollForm.html";
 
@@ -72,5 +78,4 @@ const Submit = () => {
         error:(err)=>console.log(err)
     })
 }
-
 

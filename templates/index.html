@@ -11,7 +11,7 @@
     <script src="../js/dataFetcher.js"></script>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" onclick="window.location='index.html'">
         <img src="../assets/logo.png" class="logo-icon">
         <div class="employee-payroll">
             <span style="color: #82A70C; font: normal normal bold 22px/25px Montserrat;">EMPLOYEE</span>
@@ -23,7 +23,7 @@
             <div class="employee-details">Employee Details</div>
             <div class="search-icon-btn">
                 <div class="search-icon-back">
-                    <img class="search-icon" src="../assets/ic--round-search.svg">
+                    <img class="search-icon" id="search-icon" onclick="search()" src="../assets/ic--round-search.svg">
                 </div>
                 <button class="add-user-btn" onclick="redirect()">+ Add User</button>
             </div>
