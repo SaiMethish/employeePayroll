@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayRoll Form</title>
     <link rel="stylesheet" href="../css/payrollform.css">
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -20,27 +21,27 @@
         <h3>Employee Payroll Form</h3>
         <div class="name">
             <span>Name</span>
-            <input class="name-input" type="text">
+            <input id="name-input" class="name-input" type="text">
         </div>
         <div class="avatar-container">
             <span class="profile-image-txt">Profile Image</span>
             <div>
-                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse 1.png"></span>
+                <input  class="profile-input" type="radio"><span><img id="profile-input1" src="../assets/Ellipse 1.png"></span>
             </div>
             <div>
-                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse -2.png"></span>
+                <input  class="profile-input" type="radio"><span><img id="profile-input2" src="../assets/Ellipse -2.png"></span>
             </div>
             <div>
-                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse -1.png"></span>
+                <input  class="profile-input" type="radio"><span><img id="profile-input3" src="../assets/Ellipse -1.png"></span>
             </div>
             <div>
-                <input class="profile-input" type="radio"><span><img src="../assets/Ellipse -3.png"></span>
+                <input  class="profile-input" type="radio"><span><img id="profile-input4" src="../assets/Ellipse -3.png"></span>
             </div>
         </div>
         <div class="gender">
             <span class="gender-txt">Gender</span>
             <div>
-                <input class="gender-radio" type="radio" value="male"><span>Male</span>
+                <input  class="gender-radio" type="radio" value="male"><span>Male</span>
             </div>
             <div>
                 <input class="gender-radio" type="radio" value="female"><span>Female</span>
@@ -49,18 +50,21 @@
         <div class="department">
             <span class="department-txt">Department</span>
             <div>
-                <span><input type="checkbox" value="HR">HR</span>
-                <span><input type="checkbox" value="Sales">Sales</span>
-                <span><input type="checkbox" value="Finance">Finance</span>
-                <span><input type="checkbox" value="Engineer">Engineer</span>
-                <span><input type="checkbox" value="Others">Others</span>
+                <span><input class="checkbox-input" type="checkbox" value="HR">HR</span>
+                <span><input class="checkbox-input" type="checkbox" value="Sales">Sales</span>
+                <span><input class="checkbox-input" type="checkbox" value="Finance">Finance</span>
+                <span><input class="checkbox-input" type="checkbox" value="Engineer">Engineer</span>
+                <span><input class="checkbox-input" type="checkbox" value="Others">Others</span>
             </div>
         </div>
         <div class="salary">
             <span class="salary-txt">Salary</span>
             <span>
-                <select class="salary-select">
+                <select id="salary" class="salary-select">
                     <option>Select Salary</option>
+                    <option value="10000">10,000</option>
+                    <option value="20000">20,000</option>
+                    <option value="30000">30,000</option>
                 </select>
             </span>
         </div>
@@ -68,23 +72,26 @@
             <span class="start-date-txt">Start Date</span>
             <select class="day-select">
                 <option>Day</option>
+                <option value="1">1</option>
             </select>
             <select class="month-select">
                 <option>Month</option>
+                <option value="2">2</option>
             </select>
             <select class="year-select">
                 <option>Year</option>
+                <option value="2020">2020</option>
             </select>
         </div>
         <div class="notes">
             <span class="notes-txt">Notes</span>
-            <textarea>
+            <textarea id="textarea-input">
             </textarea>
         </div>
         <div class="btn-grp">
             <button class="cancel-btn">Cancel</button>
             <div class="btn-grp1">
-                <button class="submit-btn">Submit</button>
+                <button class="submit-btn" onclick="submit()">Submit</button>
                 <button class="reset-btn">Reset</button>
             </div>
         </div>
