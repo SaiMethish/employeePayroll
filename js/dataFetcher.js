@@ -28,8 +28,8 @@ const getDetails = (data) => {
     ${data[i].startDate}
     </td>
     <td class="icons">
-        <span><img class="delete-icon" src="../assets/delete-black-18dp.svg"></span>
-        <span><img class="edit-icon" src="../assets/create-black-18dp.svg"></span>
+        <span><img class="delete-icon" src="../assets/delete-black-18dp.svg" onclick="deleteRequest('${data[i].id}')"></span>
+        <span><img class="edit-icon" src="../assets/create-black-18dp.svg" onclick="editRequest('${data[i].id}')"></span>
     </td>
 </tr>`;
         usertable.append(component);
@@ -60,7 +60,7 @@ const updateTable = (data) => {
     ${data[i].startDate}
     </td>
     <td class="icons">
-        <span><img class="delete-icon" src="../assets/delete-black-18dp.svg"></span>
+        <span><img class="delete-icon" src="../assets/delete-black-18dp.svg" onclick="deleteRequest('${data[i].id}')"></span>
         <span><img class="edit-icon" src="../assets/create-black-18dp.svg"></span>
     </td>
 </tr>`;
@@ -72,7 +72,7 @@ $(document).ready(() => {
         type: "GET",
         url: "http://localhost:3000/users",
         success: (res) => {
-            console.log(res);
+            //console.log(res);
             data = res;
             getDetails(res);
         },
@@ -95,7 +95,6 @@ const search = () => {
     $('.search-icon-back').append(btn);
     $('.search-btn').on("click", () => {
         let val = document.getElementById("extended-search").value;
-        console.log(val);
         if (val === "male" || val == "female") {
             const newdata = data.filter((i) => {
                 return i.gender == val;
@@ -109,6 +108,34 @@ const search = () => {
             updateTable(newdata);
         }
     })
+}
+
+const  deleteRequest=(id)=>{
+    console.log(id)
+    $.ajax({
+        url:`http://localhost:3000/users/${id}`,
+        type:"DELETE",
+        success:(res)=>{
+            console.log(res)
+        },
+        error:(err)=>{
+            console.log(err)
+        }
+    })
+}
+
+const editRequest=(id)=>{
+    $.ajax({
+        type: "GET",
+        url: `http://localhost:3000/users/${id}`,
+        success: (res) => {
+            console.log(res);
+            localStorage.setItem("editdata",JSON.stringify(res));
+            window.location.href="../templates/payrollForm.html";
+        },
+        error: (err) => { console.log(err) }
+    })
+    
 }
 
 

@@ -1,25 +1,47 @@
 {
   "users": [
     {
-      "name": "name1",
+      "name": "Amarpa Shashanka Keerthi Kumar",
       "profileImage": "../assets/Ellipse 1.png",
       "gender": "female",
-      "department": "['HR','Sales' ]",
-      "salary": "20000",
-      "startDate": "29",
-      "notes": "this is a description of dummy value"
+      "department": [
+        "HR",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "10000",
+      "startDate": "1/2/2020",
+      "notes": "            ",
+      "id": "fe27"
     },
     {
-      "id": "b0f3",
-      "name": "methish",
-      "profileImage": "../assets/Ellipse -3.png",
-      "gender": "male",
+      "name": "Mohammad Salman Iqbal Shaik",
+      "profileImage": "../assets/Ellipse -1.png",
+      "gender": "female",
       "department": [
+        "HR",
+        "Finance",
         "Engineer"
       ],
       "salary": "30000",
-      "startDate": "1/2/2020",
-      "notes": "dummy value"
+      "startDate": "7/8/2020",
+      "notes": "            ",
+      "id": "fff3"
+    },
+    {
+      "name": "Bubere Qasis Mohammad Muzaffa",
+      "profileImage": "../assets/Ellipse -2.png",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "10000",
+      "startDate": "4/5/2018",
+      "notes": "            ",
+      "id": "26da"
     }
   ]
 }
